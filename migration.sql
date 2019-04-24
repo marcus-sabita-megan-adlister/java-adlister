@@ -17,8 +17,8 @@ CREATE TABLE ads (
     user_id INT UNSIGNED NOT NULL,
     title VARCHAR(240) NOT NULL,
     description TEXT NOT NULL,
-    image TEXT,
-    price FLOAT UNSIGNED NOT NULL,
+    image TEXT NOT NULL,
+    price VARCHAR(200) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users(id)
         ON DELETE CASCADE
