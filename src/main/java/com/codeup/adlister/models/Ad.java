@@ -5,6 +5,7 @@ public class Ad {
     private long userId;
     private String title;
     private String description;
+    private String image;
     private String price;
 
     public String getPrice() {
