@@ -77,11 +77,12 @@ public class MySQLAdsDao implements Ads {
         return ads;
     }
 
-    public List<Ad> allFromUser() {
+    public List<Ad> allFromUser(int id) {
         PreparedStatement stmt = null;
 
         try {
             stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ?");
+            stmt.setInt(1,id);
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);
         } catch (SQLException e) {
