@@ -9,8 +9,10 @@ public class Ad {
     private String price;
 
     public String getPrice() {
-        return price;
+        return this.price;
     }
+
+    public String getImage(){ return this.image;}
 
     public void setPrice(String price) {
         this.price = price;
@@ -18,20 +20,22 @@ public class Ad {
 
 
 
-    public Ad(long id, long userId, String title, String description,String price) {
+    public Ad(long id, long userId, String title, String description, String price) {
         this.id = id;
         this.userId = userId;
         this.title = title;
         this.description = description;
-        this.price=price;
+        this.price = price;
+        this.image = "/img/default.jpg";
 
     }
 
-    public Ad(long userId, String title, String description,String price) {
+    public Ad(long userId, String title, String description, String price) {
         this.userId = userId;
         this.title = title;
         this.description = description;
-        this.price=price;
+        this.price = price;
+        this.image = "/img/default.jpg";
     }
 
     public long getId() {

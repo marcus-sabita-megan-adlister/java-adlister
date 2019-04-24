@@ -14,8 +14,10 @@
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
-            <h2>${ad.title}</h2>
-            <p>${ad.description}</p>
+            <h2>Title: ${ad.title}</h2>
+            <p>Description: ${ad.description}</p>
+            <p>Price: ${ad.price}</p>
+            <p><img src="${ad.image}" alt="philosorapter"></p>
         </div>
     </c:forEach>
 </div>
