@@ -15,4 +15,6 @@ public interface Ads {
     List<Ad> findbyid(int id);
     void deleteAd(int id);
 
+void updateAd(int ad);
+
 }

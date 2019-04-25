@@ -22,6 +22,9 @@
             <form method="post" action="/delete">
                 <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
             </form>
+            <form method="post" action="/update">
+                <button name="button2" class="updatebtn" type= submit value= ${ad.id}>Edit</button>
+            </form>
 
         </div>
     </c:forEach>

@@ -113,7 +113,7 @@ public class MySQLAdsDao implements Ads {
             stmt = connection.prepareStatement("DELETE FROM ads WHERE id = ?");
 
 
-            stmt.setInt(1, id);
+
             stmt.executeUpdate();
 
         } catch (SQLException e) {
@@ -121,5 +121,24 @@ public class MySQLAdsDao implements Ads {
         }
 
 
+    }
+
+
+
+    public void updateAd(Ad ad) {
+        PreparedStatement stmt=null;
+        try{
+          stmt = connection.prepareStatement("UPDATE ads SET title=?, description=? , price=? WHERE id=?");
+            stmt.setLong(1,ad.getId());
+            stmt.setString(2, ad.getTitle());
+            stmt.setString(3,ad.getDescription());
+            stmt.setString(4,ad.getPrice());
+
+
+            stmt.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException("Error updating Ad information", e);
+        }
     }
 }
