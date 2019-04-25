@@ -12,6 +12,7 @@ public interface Ads {
     List<Ad> allFromUser(int id);
 
     List<Ad> seeMore(int id);
-    List<Ad> deleteAd(int id);
+    List<Ad> findbyid(int id);
+    void deleteAd(int id);
 
 }

@@ -18,7 +18,7 @@ public class ViewProfileServlet extends HttpServlet {
             response.sendRedirect("/login");
             return;
         }
-// inside of a servlet
+
         String username = request.getSession().getAttribute("username").toString();
 
         int user_id = (int)(DaoFactory.getUsersDao().findByUsername(username).getId());
