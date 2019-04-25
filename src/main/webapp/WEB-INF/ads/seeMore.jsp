@@ -7,8 +7,15 @@
     </jsp:include>
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/navbar4.jsp" />
-<%--<jsp:include page="/WEB-INF/partials/navbar5.jsp" />--%>
+
+<c:choose>
+    <c:when test = "${loggedIn}">
+        <jsp:include page="/WEB-INF/partials/navbar4.jsp" />
+    </c:when>
+    <c:otherwise>
+        <jsp:include page="/WEB-INF/partials/navbar5.jsp" />
+    </c:otherwise>
+</c:choose>
 
 <div class="container">
     <h1>Here Are all the ads!</h1>
