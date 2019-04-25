@@ -16,6 +16,7 @@
             <h2>Title: ${ad.title}</h2>
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
+            <p>Posted By: ${user.username}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
         </div>
     </c:forEach>

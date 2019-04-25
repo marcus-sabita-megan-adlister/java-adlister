@@ -2,6 +2,7 @@ package com.codeup.adlister.controllers;
 
 
 import com.codeup.adlister.dao.DaoFactory;
+import com.codeup.adlister.models.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -25,6 +26,10 @@ public class SeeMoreServlet extends HttpServlet{
     int adId = Integer.parseInt(request.getParameter("button"));
 
     request.setAttribute("ads", DaoFactory.getAdsDao().seeMore(adId));
+    User user = DaoFactory.getUsersDao().findUserByAdId(adId);
+
+    request.setAttribute("user", user);
+
     request.getRequestDispatcher("/WEB-INF/ads/seeMore.jsp").forward(request, response);
 
     }
