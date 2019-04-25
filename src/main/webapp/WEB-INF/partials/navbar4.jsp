@@ -12,8 +12,8 @@
 
             <li><a href="/logout">Logout</a></li>
             <li><a href="/profile">Profile</a></li>
-        </ul>
         <jsp:include page="/WEB-INF/partials/search.jsp" />
+        </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

@@ -8,8 +8,8 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/login">Login</a></li>
             <li><a href="/register">SignUp</a></li>
-        </ul>
         <jsp:include page="/WEB-INF/partials/search.jsp" />
+        </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

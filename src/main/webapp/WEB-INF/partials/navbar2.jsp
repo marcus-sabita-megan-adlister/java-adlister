@@ -9,8 +9,8 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a  href="/ads">All ads</a></li>
             <li><a href="/register">Sign Up</a></li>
-        </ul>
         <jsp:include page="/WEB-INF/partials/search.jsp" />
+        </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
