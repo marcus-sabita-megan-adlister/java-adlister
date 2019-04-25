@@ -20,6 +20,7 @@
             <p><img src="${ad.image}" alt="philosorapter"></p>
             <form action = "/seemore" method="POST">
             <button name="button" type= submit value= ${ad.id}>See More</button>
+
             </form>
         </div>
     </c:forEach>

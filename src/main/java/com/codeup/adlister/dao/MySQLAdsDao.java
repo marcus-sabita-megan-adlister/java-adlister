@@ -17,9 +17,9 @@ public class MySQLAdsDao implements Ads {
         try {
             DriverManager.registerDriver(new Driver());
             connection = DriverManager.getConnection(
-                config.getUrl(),
-                config.getUser(),
-                config.getPassword()
+                    config.getUrl(),
+                    config.getUser(),
+                    config.getPassword()
             );
         } catch (SQLException e) {
             throw new RuntimeException("Error connecting to the database!", e);
@@ -61,11 +61,11 @@ public class MySQLAdsDao implements Ads {
 
     private Ad extractAd(ResultSet rs) throws SQLException {
         return new Ad(
-            rs.getLong("id"),
-            rs.getLong("user_id"),
-            rs.getString("title"),
-            rs.getString("description"),
-            rs.getString("price")
+                rs.getLong("id"),
+                rs.getLong("user_id"),
+                rs.getString("title"),
+                rs.getString("description"),
+                rs.getString("price")
         );
     }
 
@@ -82,7 +82,7 @@ public class MySQLAdsDao implements Ads {
 
         try {
             stmt = connection.prepareStatement("SELECT * FROM ads WHERE user_id = ?");
-            stmt.setInt(1,id);
+            stmt.setInt(1, id);
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);
         } catch (SQLException e) {
@@ -90,7 +90,7 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-    public List<Ad> seeMore(int id){
+    public List<Ad> seeMore(int id) {
         PreparedStatement stmt = null;
         try {
             stmt = connection.prepareStatement("SELECT * FROM ads WHERE id = ?");
@@ -102,5 +102,19 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+    public List<Ad> deleteAd(int id) {
+        PreparedStatement stmt = null;
+        try {
+            stmt = connection.prepareStatement("DELETE FROM ads WHERE id = ?");
 
+
+            stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error deleting all ads.", e);
+        }
+
+
+    }
 }

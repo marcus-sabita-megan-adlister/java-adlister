@@ -3,28 +3,23 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Your Profile" />
+        <jsp:param name="title" value="Viewing All The Ads" />
     </jsp:include>
 </head>
 <body>
-    <jsp:include page="/WEB-INF/partials/navbar2.jsp" />
+<jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-    <div class="container">
-        <h1>Welcome, ${sessionScope.user.username}!</h1>
-    </div>
-
+<div class="container">
+    <h1>Here Are all the ads!</h1>
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>Title: ${ad.title}</h2>
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
-            <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
         </div>
     </c:forEach>
-<script>
-
-</script>
+</div>
 
 </body>
 </html>
