@@ -18,8 +18,10 @@
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
+
             <form action = "/seemore" method="POST">
-            <button name="button" type= submit value= ${ad.id}>See More</button>
+
+                <button name="button" type= submit value= ${ad.id}>See More</button>
 
             </form>
         </div>

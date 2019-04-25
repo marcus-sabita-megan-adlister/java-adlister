@@ -19,7 +19,10 @@
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
-            <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
+            <form method="post" action="/delete">
+                <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
+            </form>
+
         </div>
     </c:forEach>
 <script>
