@@ -7,7 +7,8 @@
     </jsp:include>
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/navbar.jsp" />
+<jsp:include page="/WEB-INF/partials/navbar4.jsp" />
+<%--<jsp:include page="/WEB-INF/partials/navbar5.jsp" />--%>
 
 <div class="container">
     <h1>Here Are all the ads!</h1>

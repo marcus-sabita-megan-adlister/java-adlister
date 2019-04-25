@@ -3,15 +3,15 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Viewing All The Ads" />
+        <jsp:param name="title" value="Search Results" />
     </jsp:include>
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/navbar6.jsp" />
-<%--<jsp:include page="/WEB-INF/partials/navbar7.jsp" />--%>
+<jsp:include page="/WEB-INF/partials/navbar4.jsp" />
+<%--<jsp:include page="/WEB-INF/partials/navbar5.jsp" />--%>
 
 <div class="container">
-    <h1>Here Are all the ads!</h1>
+    <h1>Search Results</h1>
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">

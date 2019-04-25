@@ -1,3 +1,6 @@
+<!--Profile Page-->
+
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -5,13 +8,12 @@
             <a class="navbar-brand" href="">Apoca-lister</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/ads">All Ads</a></li>
+            <li><a href="/ads">All ads</a></li>
+
             <li><a href="/ads/create">Create Ad</a></li>
-            <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/register">SignUp</a></li>
         </ul>
+        <jsp:include page="/WEB-INF/partials/search.jsp" />
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
