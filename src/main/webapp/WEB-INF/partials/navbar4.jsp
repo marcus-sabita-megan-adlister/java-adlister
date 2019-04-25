@@ -5,7 +5,7 @@
             <a class="navbar-brand" href="">Apoca-lister</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/ads">show all ads</a></li>
+            <li><a href="/ads">All ads</a></li>
 
             <li><a href="/register">SignUp</a></li>
         </ul>

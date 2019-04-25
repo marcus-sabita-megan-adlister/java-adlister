@@ -6,7 +6,7 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="/ads">show all ads</a></li>
+                <li><a href="/ads">All ads</a></li>
             <li><a href="/logout">Logout</a></li>
             <li><a href="/profile">Profile</a></li>
 
