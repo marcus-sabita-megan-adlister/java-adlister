@@ -8,6 +8,7 @@
             <li><a href="/login">Login</a></li>
             <li><a href="/register">SignUp</a></li>
         </ul>
+        <p>test text</p>
     </div><!-- /.navbar-collapse -->
     <%--</div><!-- /.container-fluid -->--%>
 </nav>
