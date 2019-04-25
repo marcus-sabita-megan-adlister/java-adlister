@@ -18,12 +18,9 @@
             <h2>Title: ${ad.title}</h2>
             <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
-            <p><img src="${ad.image}" alt="philosorapter"></p>
-
+            <img src=${ad.image} alt="philosorapter">
             <form action = "/seemore" method="POST">
-
                 <button name="button" type= submit value= ${ad.id}>See More</button>
-
             </form>
         </div>
     </c:forEach>
