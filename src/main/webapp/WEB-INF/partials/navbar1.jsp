@@ -1,16 +1,19 @@
 <!--login page-->
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <a class="navbar-brand" href="">Apoca-lister</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/ads">All Ads</a></li>
             <li><a href="/login">Login</a></li>
-            <%--<li><a href="/register">SignUp</a></li>--%>
         </ul>
-        <jsp:include page="/WEB-INF/partials/search.jsp" />
-    </div><!-- /.navbar-collapse -->
-    <%--</div><!-- /.container-fluid -->--%>
+        <form class="form-inline my-2 my-lg-0" action="/results" method="POST">
+
+            <input id="search" name="search" class="form-control mr-sm-2"
+                   type="search" placeholder="Search" aria-label="Search">
+
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
 </nav>
