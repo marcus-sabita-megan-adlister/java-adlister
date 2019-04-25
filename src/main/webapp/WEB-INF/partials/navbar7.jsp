@@ -11,5 +11,5 @@
         <jsp:include page="/WEB-INF/partials/search.jsp" />
         </ul>
     </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+    <!-- /.container-fluid -->
 </nav>
