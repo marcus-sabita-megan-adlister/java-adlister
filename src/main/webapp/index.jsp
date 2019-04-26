@@ -10,6 +10,7 @@
     <jsp:include page="/WEB-INF/partials/navbar1.jsp" />
     <div class="container">
         <h1>Welcome to the Apoca-lyster!</h1>
+        <hr>
         <p>The bombs fell, but you lived. Now buy and trade what you have left.</p>
     </div>
 </body>

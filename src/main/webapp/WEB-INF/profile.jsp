@@ -12,12 +12,24 @@
     <div class="container">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
     </div>
+    <hr>
 
+    <div class="container">
+    <div>
+        <h4>Profile Information</h4>
+        <p>Username: ${sessionScope.user.username}</p>
+        <p>Email: ${sessionScope.user.email}</p>
+        <p>User ID: ${sessionScope.user.id}</p>
+    </div>
+
+    <hr>
+
+    <h2>Your Current Ads</h2>
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
-            <h2>Title: ${ad.title}</h2>
-            <p>Description: ${ad.description}</p>
-            <p>Price: ${ad.price}</p>
+            <h3>${ad.title}</h3>
+            <p>${ad.description}</p>
+            <p><strong>Price:</strong> ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
             <form method="post" action="/delete">
                 <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
@@ -25,6 +37,7 @@
 
         </div>
     </c:forEach>
+    </div>
 <script>
 
 </script>

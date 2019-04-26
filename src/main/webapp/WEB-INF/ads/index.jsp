@@ -19,6 +19,7 @@
 
 <div class="container">
     <h1>Current Apoca-lyster Ads</h1>
+    <hr>
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
