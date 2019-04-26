@@ -18,7 +18,7 @@
 </c:choose>
 
 <div class="container">
-    <h1>Search Results</h1>
+    <h1>Search Results for: ${sessionScope.searchTerm}</h1>
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">

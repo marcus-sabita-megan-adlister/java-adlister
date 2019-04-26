@@ -18,14 +18,14 @@
 
 
 <div class="container">
-    <h1>Here Are all the ads!</h1>
+    <h1>Current Apoca-lyster Ads</h1>
 
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>Title: ${ad.title}</h2>
-            <p>Description: ${ad.description}</p>
+            <%--<p>Description: ${ad.description}</p>--%>
             <p>Price: ${ad.price}</p>
-            <img src=${ad.image} alt="philosorapter">
+            <%--<img src=${ad.image} alt="philosorapter">--%>
             <form action = "/seemore" method="POST">
                 <button name="button" type= submit value= ${ad.id}>See More</button>
             </form>
