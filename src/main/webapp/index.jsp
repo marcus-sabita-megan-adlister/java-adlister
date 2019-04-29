@@ -5,6 +5,10 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Apoca-lyster!!" />
     </jsp:include>
+    <jsp:include page="/WEB-INF/css/home_page.jsp"/>
+
+
+
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar1.jsp" />

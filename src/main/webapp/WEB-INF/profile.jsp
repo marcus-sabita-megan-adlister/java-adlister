@@ -5,6 +5,8 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Your Profile" />
     </jsp:include>
+    <jsp:include page="/WEB-INF/css/allStyles.jsp"/>
+
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar3.jsp" />
@@ -15,7 +17,7 @@
     <hr>
 
     <div class="container">
-    <div>
+    <div class="profile_info">
         <h4>Profile Information</h4>
         <p>Username: ${sessionScope.user.username}</p>
         <p>Email: ${sessionScope.user.email}</p>
@@ -32,7 +34,7 @@
             <p><strong>Price:</strong> ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
             <form method="post" action="/delete">
-                <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
+                <button name="button1" class="deletebtn extra" type= submit value= ${ad.id}>delete</button>
             </form>
 
         </div>

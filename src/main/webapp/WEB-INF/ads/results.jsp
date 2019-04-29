@@ -5,6 +5,7 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Search Results" />
     </jsp:include>
+    <jsp:include page="/WEB-INF/css/allStyles.jsp"/>
 </head>
 <body>
 
@@ -24,13 +25,12 @@
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>Title: ${ad.title}</h2>
-            <p>Description: ${ad.description}</p>
             <p>Price: ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter"></p>
 
             <form action = "/seemore" method="POST">
 
-                <button name="button" type= submit value= ${ad.id}>See More</button>
+                <button class="extra" name="button" type= submit value= ${ad.id}>See More</button>
 
             </form>
         </div>

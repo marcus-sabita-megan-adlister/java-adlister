@@ -26,7 +26,7 @@ public class Ad {
         this.title = title;
         this.description = description;
         this.price = price;
-        this.image = "https://i1.sndcdn.com/artworks-000124792242-30z94x-t500x500.jp";
+        this.image = "default.jpg";
 
     }
 
@@ -35,7 +35,7 @@ public class Ad {
         this.title = title;
         this.description = description;
         this.price = price;
-        this.image = "https://i1.sndcdn.com/artworks-000124792242-30z94x-t500x500.jp";
+        this.image = "default.jpg";
     }
 
     public long getId() {
