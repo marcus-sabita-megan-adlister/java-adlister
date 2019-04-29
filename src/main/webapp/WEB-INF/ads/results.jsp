@@ -26,7 +26,7 @@
         <div class="col-md-6">
             <h2>Title: ${ad.title}</h2>
             <p>Price: ${ad.price}</p>
-            <p><img src="${ad.image}" alt="philosorapter"></p>
+            <p><img src="${ad.image}" alt="philosorapter" class="seeMoreImage"></p>
 
             <form action = "/seemore" method="POST">
 

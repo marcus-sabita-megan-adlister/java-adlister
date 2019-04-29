@@ -21,13 +21,15 @@ public class SeeMoreServlet extends HttpServlet{
         request.getRequestDispatcher("/WEB-INF/ads/seeMore.jsp").forward(request, response);
     }
 
+
+
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
     int adId = Integer.parseInt(request.getParameter("button"));
 
     request.setAttribute("ads", DaoFactory.getAdsDao().seeMore(adId));
     User user = DaoFactory.getUsersDao().findUserByAdId(adId);
-
     request.setAttribute("user", user);
 
     request.getRequestDispatcher("/WEB-INF/ads/seeMore.jsp").forward(request, response);

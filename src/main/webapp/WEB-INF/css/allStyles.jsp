@@ -40,6 +40,21 @@
         background-color: black;
         color: white;
     }
+    .image{
+        max-height: 180px;
 
+    }
+    .seeMoreImage{
+        max-height: 350px;
+    }
+    .seeMore{
+        font-size: 1.5em;
+    }
+    .seeMoreDescription{
+        font-size: 1.5em;
+    }
+    .seeMoreTitle{
+        text-decoration: underline;
+    }
 
 </style>

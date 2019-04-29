@@ -28,11 +28,11 @@
 
     <h2>Your Current Ads</h2>
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+        <div class="col-md-6 ads">
             <h3>${ad.title}</h3>
             <p>${ad.description}</p>
             <p><strong>Price:</strong> ${ad.price}</p>
-            <p><img src="${ad.image}" alt="philosorapter"></p>
+            <p><img src="${ad.image}" alt="philosorapter" class="image"></p>
             <form method="post" action="/delete">
                 <button name="button1" class="deletebtn extra" type= submit value= ${ad.id}>delete</button>
             </form>

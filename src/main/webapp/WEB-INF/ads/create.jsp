@@ -8,7 +8,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar8.jsp" />
-    <div class="container">
+    <div class="container form">
         <h1>Create a new Ad</h1>
         <hr>
         <form action="/ads/create" method="post">
@@ -19,6 +19,10 @@
             <div class="form-group">
                 <label for="description">Description</label>
                 <textarea id="description" name="description" class="form-control" type="text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Image</label>
+                <input id="image" name="image" class="form-control" type="text"></input>
             </div>
             <div class="form-group">
                 <label for="price">Price</label>

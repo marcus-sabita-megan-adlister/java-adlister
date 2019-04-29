@@ -22,12 +22,12 @@
     <h1>Interested in the Ad?</h1>
     <hr>
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
-            <h2>Title: ${ad.title}</h2>
-            <p>Description: ${ad.description}</p>
-            <p>Price: ${ad.price}</p>
-            <p>Posted By: ${user.username}</p>
-            <p><img src="${ad.image}" alt="philosorapter"></p>
+        <div class="col">
+            <h1 class="seeMoreTitle">${ad.title}</h1>
+            <p class="seeMoreDescription">${ad.description}</p>
+            <p class="seeMore">Price: ${ad.price}</p>
+            <p class="seeMore">By User: ${user.username}</p>
+            <p><img src="${ad.image}" alt="philosorapter" class="seeMoreImage"></p>
         </div>
     </c:forEach>
 </div>

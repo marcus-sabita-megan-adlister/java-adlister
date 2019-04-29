@@ -13,7 +13,8 @@
    }
 
     .ads{
-        border: 1px solid black;
+        border: 1px solid white;
+        text-align: center;
     }
 
 </style>
