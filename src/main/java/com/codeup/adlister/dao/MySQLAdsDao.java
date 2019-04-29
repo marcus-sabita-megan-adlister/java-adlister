@@ -99,9 +99,21 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-    @Override
-    public List<Ad> findbyid(int id) {
-        return null;
+//    @Override
+//    public List<Ad> findbyid(int id) {
+//        return null;
+//    }
+
+////    @Override
+    public Ad findbyid(long id)throws SQLException  {
+
+//        return null;
+        String searchQuery = "SELECT * from ads WHERE id = ?";
+        PreparedStatement stmt = connection.prepareStatement(searchQuery);
+        stmt.setLong(1, id);
+        ResultSet rs = stmt.executeQuery();
+        rs.next();
+        return extractAd(rs);
     }
 
 
@@ -124,21 +136,34 @@ public class MySQLAdsDao implements Ads {
     }
 
 
+//
+//    public void updateAd(Ad ad, long id) throws SQLException {
+//        String editQuery = "UPDATE ads SET title = ?, description = ?, price = ? WHERE id = ?";
+//        PreparedStatement stmt = connection.prepareStatement(editQuery, Statement.RETURN_GENERATED_KEYS);
+//        stmt.setString(1, ad.getTitle());
+//        stmt.setString(2, ad.getDescription());
+//        stmt.setString(3, ad.getPrice());
+//
+//
+//        stmt.setLong(4, id);
+//        stmt.executeUpdate();
+//    }
 
-    public void updateAd(Ad ad) {
-        PreparedStatement stmt=null;
-        try{
-          stmt = connection.prepareStatement("UPDATE ads SET title=?, description=? , price=? WHERE id=?");
-            stmt.setLong(1,ad.getId());
-            stmt.setString(2, ad.getTitle());
-            stmt.setString(3,ad.getDescription());
-            stmt.setString(4,ad.getPrice());
-
+    public void updateAd(Ad ad){
+        String query = "update ads set title = ?, description = ?, price = ? where id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, ad.getTitle());
+            stmt.setString(2, ad.getDescription());
+            stmt.setString(3, ad.getPrice());
+            stmt.setLong(4, ad.getId());
 
             stmt.executeUpdate();
+            stmt.close();
 
-        } catch (SQLException e) {
-            throw new RuntimeException("Error updating Ad information", e);
+        } catch (SQLException e){
+            throw new RuntimeException("Error creating new ads", e);
         }
     }
+
 }
