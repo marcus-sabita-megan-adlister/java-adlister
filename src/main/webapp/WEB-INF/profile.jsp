@@ -34,7 +34,9 @@
             <form method="post" action="/delete">
                 <button name="button1" class="deletebtn" type= submit value= ${ad.id}>delete</button>
             </form>
-
+            <form method="get" action="/updateAds">
+                <button name="button2" class="updatebtn" type= submit value= ${ad.userId}>edit</button>
+            </form>
         </div>
     </c:forEach>
     </div>

@@ -1,6 +1,7 @@
 package com.codeup.adlister.dao;
 
 import com.codeup.adlister.models.Ad;
+import com.codeup.adlister.models.User;
 import com.mysql.cj.jdbc.Driver;
 
 import java.sql.*;
@@ -115,7 +116,7 @@ public class MySQLAdsDao implements Ads {
     }
 
     @Override
-    public List<Ad> findbyid(int id) {
+    public List<Ad> findbyid(long id) {
         return null;
     }
 
@@ -134,5 +135,21 @@ public class MySQLAdsDao implements Ads {
         }
 
 
+    }
+    public void updateAd(Ad ad){
+        String query = "update ads set  title= ?, description = ?,price= ? where id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, ad.getTitle());
+            stmt.setString(2, ad.getDescription());
+//            stmt.setString(3,ad.getImage());
+            stmt.setString(3, ad.getPrice());
+            stmt.setLong(4, ad.getId());
+            stmt.executeUpdate();
+            stmt.close();
+
+        } catch (SQLException e){
+            throw new RuntimeException("Error creating new user", e);
+        }
     }
 }

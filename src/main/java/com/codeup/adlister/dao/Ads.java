@@ -13,10 +13,11 @@ public interface Ads {
 
     List<Ad> seeMore(int id);
 
-    List<Ad> findbyid(int id);
+    List<Ad> findbyid(long id);
 
     List<Ad> findBySearch(String search);
 
     void deleteAd(int id);
+    void updateAd(Ad ad);
 
 }
