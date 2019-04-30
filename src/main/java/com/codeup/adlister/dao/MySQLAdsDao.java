@@ -1,6 +1,7 @@
 package com.codeup.adlister.dao;
 
 import com.codeup.adlister.models.Ad;
+import com.codeup.adlister.models.User;
 import com.mysql.cj.jdbc.Driver;
 
 import java.sql.*;
@@ -103,15 +104,15 @@ public class MySQLAdsDao implements Ads {
     @Override
     public List<Ad> findBySearch(String search) {
 
-            PreparedStatement stmt = null;
-            try {
-                stmt = connection.prepareStatement("SELECT * FROM ads WHERE description LIKE ?");
-                stmt.setString(1, '%' + search + '%');
-                ResultSet rs = stmt.executeQuery();
-                return createAdsFromResults(rs);
-            } catch (SQLException e) {
-                throw new RuntimeException("Error retrieving all ads.", e);
-            }
+        PreparedStatement stmt = null;
+        try {
+            stmt = connection.prepareStatement("SELECT * FROM ads WHERE description LIKE ?");
+            stmt.setString(1, '%' + search + '%');
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error retrieving all ads.", e);
+        }
 
     }
 
@@ -134,6 +135,24 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error deleting all ads.", e);
         }
 
+
+    }
+
+    public void updateAd(Ad ad) {
+
+        String query = "UPDATE ads SET title  = ? , description = ? , image = ?,price=? where id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setString(2, ad.getTitle());
+            stmt.setString(3, ad.getDescription());
+            stmt.setString(4, ad.getImage());
+            stmt.setString(5, ad.getPrice());
+            stmt.setLong(1, ad.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error updating user", e);
+
+        }
 
     }
 }

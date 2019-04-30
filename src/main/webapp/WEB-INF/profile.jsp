@@ -37,6 +37,10 @@
                 <button name="button1" class="deletebtn extra" type= submit value= ${ad.id}>delete</button>
             </form>
 
+            <form method="post" action="/updateAds">
+                <button name="button1" class="updateBtn" type= submit value= ${ad.id}>edit</button>
+            </form>
+
         </div>
     </c:forEach>
     </div>

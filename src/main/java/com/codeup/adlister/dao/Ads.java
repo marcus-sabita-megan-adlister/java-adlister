@@ -19,5 +19,5 @@ public interface Ads {
 
     void deleteAd(int id);
     //    List<Ad> allFromUser(long id);
-
+    void updateAd(Ad ad);
 }
