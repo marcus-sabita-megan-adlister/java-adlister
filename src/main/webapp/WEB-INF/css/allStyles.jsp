@@ -55,15 +55,7 @@
     }
     .seeMoreTitle{
         text-decoration: underline;
-    }
-    .updateBtn{
-        border: 1px solid black;
-        text-emphasis: none;
-        width: 180px;
-        background: white;
-        color: black;
-        text-align: center;
-        border-radius: 5px;
+   
     }
 
 </style>

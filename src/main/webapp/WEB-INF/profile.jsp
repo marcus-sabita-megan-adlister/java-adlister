@@ -30,7 +30,7 @@
 
     <h2>Your Current Ads</h2>
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6 ads">
+        <div class="col-md-6">
             <h3>${ad.title}</h3>
             <p>${ad.description}</p>
             <p><strong>Price:</strong> ${ad.price}</p>
