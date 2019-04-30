@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
 import java.io.IOException;
 
 @WebServlet(name = "controllers.RegisterServlet", urlPatterns = "/register")
@@ -31,6 +32,7 @@ public class RegisterServlet extends HttpServlet {
             || (! passwordConfirmation);
 
         if (inputHasErrors) {
+            JOptionPane.showMessageDialog(null, "Please check that all fields are correctly filled in.", "YO!",JOptionPane.ERROR_MESSAGE);
             response.sendRedirect("/register");
             return;
         }
