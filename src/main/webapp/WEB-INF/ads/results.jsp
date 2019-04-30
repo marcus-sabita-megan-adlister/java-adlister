@@ -8,7 +8,6 @@
     <jsp:include page="/WEB-INF/css/allStyles.jsp"/>
 </head>
 <body>
-
 <c:choose>
     <c:when test = "${loggedIn}">
         <jsp:include page="/WEB-INF/partials/navbar4.jsp" />
@@ -26,7 +25,7 @@
         <div class="col-md-6">
             <h2>Title: ${ad.title}</h2>
             <p>Price: ${ad.price}</p>
-            <p><img src="${ad.image}" alt="philosorapter" class="seeMoreImage"></p>
+            <p><img src="${ad.image}" alt="philosorapter" class="image"></p>
 
             <form action = "/seemore" method="POST">
 
