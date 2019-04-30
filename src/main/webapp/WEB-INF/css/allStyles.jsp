@@ -57,5 +57,18 @@
         text-decoration: underline;
    
     }
+    .ads {
+        border: 1px solid white;
+        text-align: center;
+    }
+    .updateBtn {
+        border: 1px solid black;
+        text-emphasis: none;
+        width: 180px;
+        background: white;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+    }
 
 </style>
