@@ -95,5 +95,5 @@ VALUES (1, "TV for Sale",
         "I want to trade my really very cool bicycle for some water or food. I am
         willing to negotiate but I also think that I'm not going to make it too much longer
         without food or water. Help Me Please.
-          Contact me at 123-456-7890", "https://cdn.shopify.com/s/files/1/1597/9875/products/phantom-bikes-vision-pedal-assist-throttle-vintage-electric-bike-cruiser-phantom-gloss-black_3f479c3b-e551-44db-aec0-ee2dcbc5d53c_2000x.jpg?v=1543004690", "Food or Water"),
+          Contact me at 123-456-7890", "https://cdn.shopify.com/s/files/1/1597/9875/products/phantom-bikes-vision-pedal-assist-throttle-vintage-electric-bike-cruiser-phantom-gloss-black_3f479c3b-e551-44db-aec0-ee2dcbc5d53c_2000x.jpg?v=1543004690", "Food or Water");
 

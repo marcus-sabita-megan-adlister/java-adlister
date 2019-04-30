@@ -7,7 +7,7 @@
             <a class="navbar-brand" href="/">Apoca-lyster</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a  href="/ads">All ads</a></li>
+            <li><a  href="/ads">All Ads</a></li>
             <li><a href="/register">Sign Up</a></li>
         <jsp:include page="/WEB-INF/partials/search.jsp" />
         </ul>

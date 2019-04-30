@@ -8,7 +8,7 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="/ads">All ads</a></li>
+                <li><a href="/ads">All Ads</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/register">SignUp</a></li>
 
