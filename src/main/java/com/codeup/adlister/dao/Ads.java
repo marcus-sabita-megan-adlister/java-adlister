@@ -9,7 +9,7 @@ public interface Ads {
     List<Ad> all();
     // insert a new ad and return the new ad's id
     Long insert(Ad ad);
-    List<Ad> allFromUser(int id);
+    List<Ad> allFromUser(long id);
 
     List<Ad> seeMore(int id);
 
@@ -18,5 +18,6 @@ public interface Ads {
     List<Ad> findBySearch(String search);
 
     void deleteAd(int id);
+    //    List<Ad> allFromUser(long id);
 
 }

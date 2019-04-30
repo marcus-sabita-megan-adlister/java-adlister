@@ -8,7 +8,6 @@
     <jsp:include page="/WEB-INF/css/allStyles.jsp"/>
 </head>
 <body>
-
 <c:choose>
     <c:when test = "${loggedIn}">
         <jsp:include page="/WEB-INF/partials/navbar4.jsp" />
