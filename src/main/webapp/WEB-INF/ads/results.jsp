@@ -23,10 +23,10 @@
     <hr>
 
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+        <div class="col-md-6 ads">
             <h2>Title: ${ad.title}</h2>
             <p>Price: ${ad.price}</p>
-            <p><img src="${ad.image}" alt="philosorapter" class="seeMoreImage"></p>
+            <p><img src="${ad.image}" alt="philosorapter" class="image"></p>
 
             <form action = "/seemore" method="POST">
 
