@@ -14,21 +14,21 @@
         <form action="/ads/create" method="post">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input id="title" name="title" class="form-control" type="text">
+                <input id="title" name="title" class="form-control use" type="text">
             </div>
             <div class="form-group">
                 <label for="description">Description</label>
-                <textarea id="description" name="description" class="form-control" type="text"></textarea>
+                <textarea id="description" name="description" class="form-control use" type="text"></textarea>
             </div>
             <div class="form-group">
                 <label for="image">Image</label>
-                <input id="image" name="image" class="form-control" type="text"></input>
+                <input id="image" name="image" class="form-control use" type="text"></input>
             </div>
             <div class="form-group">
                 <label for="price">Price</label>
-                <input id="price" name="price" class="form-control" type="text">
+                <input id="price" name="price" class="form-control use" type="text">
             </div>
-            <input type="submit" class="btn btn-block btn-primary">
+            <input type="submit" class="btn btn-block extra" value="Create Ad">
         </form>
     </div>
 </body>

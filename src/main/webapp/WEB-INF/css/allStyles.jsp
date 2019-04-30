@@ -4,6 +4,15 @@
         font-family: 'Russo One', sans-serif;
         font-weight: lighter;
     }
+    .profile_info{
+        width: 300px;
+        background: dimgrey;
+        border-radius: 5px;
+    }
+    .pInfo{
+        margin: 15px;
+        padding: 5px;
+    }
     .container{
         color: white;
     }
@@ -14,14 +23,27 @@
     .search-btn{
         margin-top: 8px;
         border: 1px solid black;
+        margin-right: 10px;
     }
     .search-btn:hover{
         background-color: black;
         color: white;
     }
+    .deletebtn{
+        background: red;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .deletebtn:hover{
+        background: black;
+        color: red;
+
+    }
     .extra{
         background: black;
         border: 1px solid white;
+        border-radius: 5px;
     }
     .extra:hover{
         background-color: white;
@@ -61,7 +83,7 @@
    
     }
     .ads {
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         text-align: center;
     }
     .updateBtn {

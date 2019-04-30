@@ -18,12 +18,14 @@
 
     <div class="container">
     <div class="profile_info">
-        <h4>Profile Information</h4>
-        <p>Username: ${sessionScope.user.username}</p>
-        <p>Email: ${sessionScope.user.email}</p>
-        <p>Password: **********</p>
-        <p>User ID: ${sessionScope.user.id}</p>
-        <p class="updateBtn"><a href="/update">Update Information ?</a></p>
+        <div class="pInfo">
+            <h4>Profile Information</h4>
+            <p>Username: ${sessionScope.user.username}</p>
+            <p>Email: ${sessionScope.user.email}</p>
+            <p>Password: **********</p>
+            <p>User ID: ${sessionScope.user.id}</p>
+            <p class="updateBtn"><a href="/update">Update Information ?</a></p>
+        </div>
     </div>
 
     <hr>
@@ -36,7 +38,7 @@
             <p><strong>Price:</strong> ${ad.price}</p>
             <p><img src="${ad.image}" alt="philosorapter" class="image"></p>
             <form method="post" action="/delete">
-                <button name="button1" class="deletebtn extra" type= submit value= ${ad.id}>delete</button>
+                <button name="button1" class="deletebtn" type= submit value= ${ad.id}>Delete</button>
             </form>
 
         </div>
