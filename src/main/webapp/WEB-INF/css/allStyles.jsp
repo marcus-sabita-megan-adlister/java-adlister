@@ -21,13 +21,16 @@
     }
     .extra{
         background: black;
-        border: none;
+        border: 1px solid white;
     }
     .extra:hover{
         background-color: white;
         color: black;
+        border: 1px solid black;
     }
-
+    .seeMoreBtn{
+        border-radius: 5px;
+    }
      .form {
          width: 50%;
          text-align: center;

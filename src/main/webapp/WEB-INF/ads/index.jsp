@@ -31,7 +31,7 @@
             <p>Price: ${ad.price}</p>
             <p><img src=${ad.image} alt="philosorapter" class="image"></p>
             <form action = "/seemore" method="POST">
-                <button name="button" class="extra" type= submit value= ${ad.id}>See More</button>
+                <button name="button" class="extra seeMoreBtn" type= submit value= ${ad.id}>See More</button>
             </form>
         </div>
     </c:forEach>
