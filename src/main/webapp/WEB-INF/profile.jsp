@@ -21,7 +21,9 @@
         <h4>Profile Information</h4>
         <p>Username: ${sessionScope.user.username}</p>
         <p>Email: ${sessionScope.user.email}</p>
+        <p>Password: **********</p>
         <p>User ID: ${sessionScope.user.id}</p>
+        <p class="updateBtn"><a href="/update">Update Information ?</a></p>
     </div>
 
     <hr>
