@@ -84,4 +84,16 @@ VALUES (1, "TV for Sale",
          but you will also be transported back to simpler times with all the
          beautiful scents that I have.  I have 30 candles in total, I have 22 Summer Daisy scents,
           7 Pumpkin Spices, and 1 candle labeled 'Positivity'.
-          Contact me at 123-456-7890", "https://s.abcnews.com/images/US/dynamite-gty-jpo-180907_hpMain_12x5_992.jpg", "1 Cup of Rice");
+          Contact me at 123-456-7890", "https://s.abcnews.com/images/US/dynamite-gty-jpo-180907_hpMain_12x5_992.jpg", "1 Cup of Rice"),
+       (4, "Brand New Chair, Slightly Damaged",
+        "I recently made a chair out of wood that I found laying around. I have only
+         used it a handful of times. The front legs are moveable. Very comfortable
+         the cushion is very soft. If you are in need of a chair I URGE you to look
+          no further. I want to trade it for a different chair please.
+          Contact me at 123-456-7890", "https://newbloggycat.files.wordpress.com/2015/11/broken-chair.jpg?w=530", "1 Brand New Chair"),
+       (2, "Very Cool Bicycle",
+        "I want to trade my really very cool bicycle for some water or food. I am
+        willing to negotiate but I also think that I'm not going to make it too much longer
+        without food or water. Help Me Please.
+          Contact me at 123-456-7890", "https://cdn.shopify.com/s/files/1/1597/9875/products/phantom-bikes-vision-pedal-assist-throttle-vintage-electric-bike-cruiser-phantom-gloss-black_3f479c3b-e551-44db-aec0-ee2dcbc5d53c_2000x.jpg?v=1543004690", "Food or Water"),
+
