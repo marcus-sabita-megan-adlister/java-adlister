@@ -12,6 +12,7 @@
 
             <li><a href="/ads/create">Create Ad</a></li>
             <li><a href="/logout">Logout</a></li>
+            <li><a href="/update">update</a></li>
         <jsp:include page="/WEB-INF/partials/search.jsp" />
         </ul>
     </div><!-- /.navbar-collapse -->
